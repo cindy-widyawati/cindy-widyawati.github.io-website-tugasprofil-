@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil CV | Cindy Widyawati</title>
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --accent:#6f4e37;
+  --dark:#3d3a56;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#f2efff,#ffffff);
+  color:var(--dark);
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  background:#ffffff;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+.nav-link:hover{
+  color:var(--accent)!important;
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:120px 0;
+}
+
+/* ===== ANIMASI SCROLL ===== */
+.fade-up{
+  opacity:0;
+  transform:translateY(35px);
+  transition:.9s ease;
+}
+.fade-up.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ===== BOX UTAMA ===== */
+.box{
+  border-radius:30px;
+  padding:40px;
+  box-shadow:0 25px 60px rgba(0,0,0,.12);
+  transition:.3s;
+}
+.box:hover{
+  transform:translateY(-8px);
+}
+
+/* ===== VARIAN WARNA BOX ===== */
+.purple{background:linear-gradient(135deg,#dad6ff,#ffffff)}
+.peach{background:linear-gradient(135deg,#ffe6d8,#ffffff)}
+.green{background:linear-gradient(135deg,#e7fff4,#ffffff)}
+.blue{background:linear-gradient(135deg,#e9edff,#ffffff)}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(135deg,#cbc7f7,#f5f4ff);
+  border-radius:40px;
+  padding:60px;
+  box-shadow:0 40px 90px rgba(0,0,0,.18);
+}
+.hero img{
+  width:100%;
+  border-radius:30px;
+}
+
+/* ===== BUTTON ===== */
+.btn-main{
+  background:var(--accent);
+  color:white;
+  border-radius:30px;
+  padding:12px 32px;
+}
+.btn-main:hover{
+  background:#5a3d2c;
+}
+
+/* ===== MINI CARD ===== */
+.mini{
+  background:linear-gradient(135deg,#ffffff,#f2f1ff);
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 12px 30px rgba(0,0,0,.1);
+  border-left:6px solid var(--accent);
+  transition:.3s;
+}
+.mini:hover{
+  transform:translateY(-6px);
+}
+
+/* ===== CONTACT ===== */
+.contact-card{
+  background:linear-gradient(135deg,#ffffff,#f3f1ff);
+  border-radius:25px;
+  padding:35px;
+  text-align:center;
+  box-shadow:0 25px 60px rgba(0,0,0,.15);
+  transition:.3s;
+}
+.contact-card:hover{
+  transform:translateY(-8px);
+}
+.icon{
+  width:60px;
+  height:60px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  margin:0 auto 12px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#fff;
+  padding:30px;
+  text-align:center;
+  box-shadow:0 -8px 25px rgba(0,0,0,.08);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold">Cindy.</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#edu">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HOME -->
+<section id="home">
+  <div class="container">
+    <div class="hero fade-up">
+      <div class="row align-items-center g-5">
+
+        <!-- TEKS -->
+        <div class="col-lg-7 fade-up">
+          <h1 class="fw-bold display-5">
+            Hi, Saya <span style="color:var(--accent)">Cindy Widyawati</span>
+          </h1>
+
+          <p class="fs-5 mt-3">
+            Siswi <b>SMKN 8 Jember</b> jurusan <b>Rekayasa Perangkat Lunak</b>.
+            Saya memiliki minat pada pengembangan website modern,
+            desain antarmuka, dan tampilan yang estetis.
+          </p>
+
+          <p class="text-muted">
+            Website ini dibuat sebagai <b>profil CV digital</b> dan
+            <b>syarat PKL</b>, menampilkan informasi diri, pendidikan,
+            keahlian, serta project yang pernah saya kerjakan.
+          </p>
+
+          <a href="#about" class="btn btn-main mt-3">
+            Tentang Saya
+          </a>
+
+          <!-- MINI CARD -->
+          <div class="row mt-4 g-3">
+            <div class="col-md-4 fade-up">
+              <div class="mini">
+                <h6 class="fw-bold mb-1">Web Design</h6>
+                <small>UI modern & rapi</small>
+              </div>
+            </div>
+            <div class="col-md-4 fade-up" style="transition-delay:.1s">
+              <div class="mini">
+                <h6 class="fw-bold mb-1">Frontend</h6>
+                <small>HTML, CSS, Bootstrap</small>
+              </div>
+            </div>
+            <div class="col-md-4 fade-up" style="transition-delay:.2s">
+              <div class="mini">
+                <h6 class="fw-bold mb-1">Creative</h6>
+                <small>Warna & animasi ringan</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+        <div class="col-lg-5 text-center fade-up" style="transition-delay:.2s">
+          <img src="cindy.jpg" alt="Cindy Widyawati">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="box purple fade-up">
+      <div class="row align-items-center g-5">
+
+        <!-- TEKS -->
+        <div class="col-lg-7 fade-up">
+          <h2 class="fw-bold mb-3">Tentang Saya</h2>
+
+          <p class="fs-5">
+            Saya <b>Cindy Widyawati</b>, siswi <b>SMKN 8 Jember</b>
+            jurusan <b>Rekayasa Perangkat Lunak</b>.
+            Saya tertarik pada dunia <b>web development</b>
+            dan desain tampilan yang modern serta nyaman dilihat.
+          </p>
+
+          <p class="text-muted">
+            Saya senang menggabungkan warna yang serasi, tata letak yang rapi,
+            dan animasi ringan agar website terlihat hidup tetapi tetap profesional.
+            Website ini dibuat sebagai <b>profil CV digital</b> untuk kebutuhan PKL.
+          </p>
+
+          <!-- MINI INFO -->
+          <div class="row mt-4 g-3">
+            <div class="col-md-4 fade-up">
+              <div class="mini">
+                <b>Disiplin</b><br>
+                <small>Tepat waktu</small>
+              </div>
+            </div>
+            <div class="col-md-4 fade-up" style="transition-delay:.1s">
+              <div class="mini">
+                <b>Kreatif</b><br>
+                <small>Ide & desain</small>
+              </div>
+            </div>
+            <div class="col-md-4 fade-up" style="transition-delay:.2s">
+              <div class="mini">
+                <b>Belajar</b><br>
+                <small>Terus berkembang</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+        <div class="col-lg-5 text-center fade-up" style="transition-delay:.2s">
+          <img src="cindot.jpg" class="w-100 rounded-4">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & SKILLS -->
+<section id="edu">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- EDUCATION -->
+      <div class="col-lg-6 fade-up">
+        <div class="box peach h-100">
+          <h3 class="fw-bold mb-4">Riwayat Pendidikan</h3>
+
+          <div class="mini mb-3">
+            <b>SMKN 8 Jember</b><br>
+            <small>Rekayasa Perangkat Lunak (2024 – Sekarang)</small>
+          </div>
+
+          <div class="mini mb-3">
+            <b>SMPN 1 UMBULSARI</b><br>
+            <small>Pendidikan Menengah Pertama</small>
+          </div>
+
+          <div class="mini">
+            <b>SDN TEMBOKREJO 05</b><br>
+            <small>Pendidikan Dasar</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="col-lg-6 fade-up" style="transition-delay:.2s">
+        <div class="box green h-100">
+          <h3 class="fw-bold mb-4">Keahlian</h3>
+
+          <div class="mini mb-3">
+            <b>HTML & CSS</b><br>
+            <small>Membuat struktur & tampilan website</small>
+          </div>
+
+          <div class="mini mb-3">
+            <b>Bootstrap</b><br>
+            <small>Layout responsive & modern</small>
+          </div>
+
+          <div class="mini">
+            <b>UI Design</b><br>
+            <small>Desain bersih & estetis</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECT -->
+<section id="project">
+  <div class="container">
+    <div class="box brown fade-up">
+      <h2 class="fw-bold mb-4 text-center">My Project</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-up">
+          <div class="mini project-card">
+            <h4 class="fw-bold mb-2">Website Profil & Menu Café</h4>
+            <p class="text-muted">
+              Website sederhana yang menampilkan profil, menu, dan tampilan
+              modern dengan Bootstrap serta animasi ringan.
+              Project ini melatih saya dalam layout, warna, dan UX.
+            </p>
+
+            <a href="https://cindy-widyawati.github.io/cindy-widyawati.github.io-website-coffee-/" class="btn btn-main mt-2">
+              Detail Project →
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Contact Me</h2>
+
+    <div class="row justify-content-center g-4">
+
+      <div class="col-md-4 fade-up">
+        <div class="contact-card text-center">
+          <div class="icon">📱</div>
+          <h6 class="fw-bold">WhatsApp</h6>
+          <small>083847984420</small>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-up" style="transition-delay:.1s">
+        <div class="contact-card text-center">
+          <div class="icon">📧</div>
+          <h6 class="fw-bold">Email</h6>
+          <small>cindypireljuli@gmail.com</small>
+        </div>
+      </div>
+
+      <div class="col-md-4 fade-up" style="transition-delay:.2s">
+        <div class="contact-card text-center">
+          <div class="icon">📸</div>
+          <h6 class="fw-bold">Instagram</h6>
+          <small>@cndy_wdyaa</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-center py-4">
+  <small>
+    © 2026 Cindy Widyawati — Portfolio CV PKL
+  </small>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
